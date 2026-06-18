@@ -1,0 +1,38 @@
+datasets:
+  - key: wlasl
+    name: WLASL - Word-Level American Sign Language
+    languages: [ASL, English]
+    access: public_metadata_plus_video_urls
+    url: https://github.com/dxli94/WLASL
+    license_note: Follow WLASL repository and original video source terms before downloading video assets.
+    metadata_urls:
+      - https://raw.githubusercontent.com/dxli94/WLASL/master/start_kit/WLASL_v0.3.json
+  - key: ms_asl
+    name: MS-ASL
+    languages: [ASL, English]
+    access: public_research_archive
+    url: https://www.microsoft.com/en-us/research/project/ms-asl/
+    license_note: Follow Microsoft Research dataset terms.
+    metadata_urls:
+      - https://www.microsoft.com/en-us/research/uploads/prod/2019/01/MSASL_train.json
+  - key: asllvd
+    name: ASLLVD - American Sign Language Lexicon Video Dataset
+    languages: [ASL, English]
+    access: license_gated_download_page
+    url: https://www.bu.edu/asllrp/av/dai-asllvd.html
+    license_note: Requires acceptance of BU ASLLRP terms.
+    metadata_urls: []
+  - key: autsl
+    name: AUTSL Turkish Sign Language Dataset
+    languages: [TSL]
+    access: kaggle_or_official_archive
+    url: https://www.kaggle.com/datasets/risangbaskoro/wlasl-processed
+    license_note: Configure Kaggle credentials and verify dataset-specific usage terms.
+    metadata_urls: []
+  - key: indian_sign_language
+    name: Indian Sign Language Dataset
+    languages: [ISL, Hindi, English]
+    access: kaggle_or_academic_mirror
+    url: https://www.kaggle.com/search?q=indian+sign+language+dataset
+    license_note: Select a licensed ISL dataset and record provenance in the generated manifest.
+    metadata_urls: []

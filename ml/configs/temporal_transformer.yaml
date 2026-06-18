@@ -1,0 +1,21 @@
+experiment_name: signbridge_temporal_transformer
+seed: 42
+data:
+  processed_dir: data/processed
+  sequence_length: 64
+  landmark_dim: 63
+  languages: [ASL, ISL]
+model:
+  d_model: 128
+  nhead: 8
+  num_layers: 4
+  dropout: 0.15
+training:
+  batch_size: 32
+  epochs: 30
+  learning_rate: 0.0003
+  weight_decay: 0.01
+  confidence_threshold: 0.65
+export:
+  output_dir: models/checkpoints
+  quantize: true

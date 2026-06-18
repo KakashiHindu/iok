@@ -1,0 +1,25 @@
+# dependencies
+node_modules/
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# builds
+dist/
+build/
+*.egg-info/
+
+# runtime data
+/data/
+/models/checkpoints/
+/mlruns/
+.env
+.env.*
+!.env.example
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/

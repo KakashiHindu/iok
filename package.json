@@ -1,0 +1,17 @@
+{
+  "name": "signbridge-ai-monorepo",
+  "private": true,
+  "scripts": {
+    "frontend:install": "npm --prefix frontend install",
+    "frontend:dev": "npm --prefix frontend run dev",
+    "frontend:build": "npm --prefix frontend run build",
+    "frontend:lint": "npm --prefix frontend run lint",
+    "frontend:typecheck": "npm --prefix frontend run typecheck",
+    "frontend:test": "npm --prefix frontend run test -- --run",
+    "backend:test": "python -m pytest backend/tests ml/tests",
+    "lint": "npm --prefix frontend run lint",
+    "typecheck": "npm --prefix frontend run typecheck",
+    "build": "npm --prefix frontend run build",
+    "test": "npm --prefix frontend run test -- --run && python -m pytest backend/tests ml/tests"
+  }
+}
